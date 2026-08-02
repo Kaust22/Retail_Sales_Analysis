@@ -66,6 +66,12 @@ A star-schema data model was built using a dedicated calendar dimension (`Dim_Da
 +-------------------+           +----------------------------+
 ```
 
+### 🧮 Explicit DAX Measures Created:
+* **Core Metrics:** `Total Sales`, `Total Orders`, `Total Quantity Sold`, `AOV`
+* **Time Intelligence:** `Sales PY`, `YoY Sales Growth %`
+* 📄 *For the complete DAX code formulas and documentation, see [`docs/dax_measures.md`](docs/dax_measures.md).*
+---
+
 ## 💡 Key Business Insights (Executive Summary)
 
 * **Discount Erosion:** Promotional discounts exceeding 20% significantly reduce net profit margins on high-volume product categories.
