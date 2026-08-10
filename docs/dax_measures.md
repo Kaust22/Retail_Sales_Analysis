@@ -46,7 +46,7 @@ Total Sales = SUM(retail_store_sales[Total Spent])
 Total Orders = DISTINCTCOUNT(retail_store_sales[Transaction ID])
 ```
 
-### `Total Quantity Sold`
+### `Total Units Sold`
 * **Description:** Sums total units sold across all line items.
 * **Format:** Whole Number (123)
 
