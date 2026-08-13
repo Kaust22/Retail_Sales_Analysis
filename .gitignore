@@ -1,0 +1,29 @@
+# Power BI Temporary & Auto-Save Files
+*.pbix.lock
+*.AutoSave.pbix
+
+# Windows OS Junk
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS OS Junk
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# IDE & Code Editor Settings
+.vscode/
+.idea/
+*.swp
+
+# Python / Jupyter (if you run cleaning scripts)
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# System Logs & Temporary Files
+*.log
+*.tmp

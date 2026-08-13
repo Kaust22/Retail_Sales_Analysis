@@ -67,11 +67,54 @@ A star-schema data model was built using a dedicated calendar dimension (`Dim_Da
 * 📄 *For the complete DAX code formulas and documentation, see [`docs/dax_measures.md`](docs/dax_measures.md).*
 ---
 
+## 📈 Executive Visual & Insight Breakdown
+
+### 1. Revenue & Order Volume Trend over Time
+
+![Revenue & Order Volume Trend](docs/screenshots/revenue_order_volume.png)
+
+* **Visual Type:** Line & Clustered Column Combo Chart *(configured with `Year` → `Quarter` → `Month` Drill-Down Hierarchy)*
+* **Key Finding:** Total sales reached **$1.55M** across **11,971 orders**. Monthly revenue maintains a steady baseline around $40K–$50K. Notably, **January exhibits a recurring annual sales peak** ($52.9K in Jan 2022, $48.1K in Jan 2023, $47.9K in Jan 2024).
+* **Business Takeaway:** January surges reflect post-holiday gift card redemptions, new-year essential restocking, and clearance promotions. Supply chain and procurement teams must optimize inventory replenishment in late December to prevent stockouts during the January demand wave.
+
+---
+
+### 2. Category Performance Breakdown
+
+![Category Performance Breakdown](docs/screenshots/category_performance_aov_breakdown.png)
+
+* **Visual Type:** Clustered Horizontal Bar Chart
+* **Key Finding:** **Butchers** ($208.12K | 13.41%) and **Electric Household Essentials** ($203.81K | 13.13%) generate the highest net revenue, carrying the highest Average Order Values (~$138/checkout). **Patisserie** ranks lowest ($182.17K | 11.74%).
+* **Business Takeaway:** High-ticket categories drive top-line revenue margin. Cross-selling or bundling lower-performing categories (e.g., bundling Patisserie items with Beverages) can effectively lift overall basket sizes.
+
+---
+
+### 3. Payment Method Preferences
+
+![Payment Method Preferences](docs/screenshots/payment_method_preferences.png)
+
+* **Visual Type:** Donut Chart (`Payment Method` vs. `Total Sales`)
+* **Key Finding:** Revenue is evenly distributed across payment options, led slightly by **Cash** ($537.71K | 34.6%), followed by **Digital Wallet** ($507.28K | 32.7%) and **Credit Card** ($507.08K | 32.7%).
+* **Business Takeaway:** Digital payment options (Digital Wallet + Credit Card) represent over 65% of total sales volume. Maintaining seamless mobile and digital checkout integrations is critical to minimizing cart abandonment.
+
+---
+
+### 4. Promotional & Discount Impact
+
+![Promotional & Discount Impact](docs/screenshots/promotional_discount_impact.png)
+
+* **Visual Type:** Clustered Column Chart (`Discount Applied = True vs. False`)
+* **Key Finding:** Full-price transactions (`False`) generate **$1.02M** (~66%) of total revenue, while discounted transactions (`True`) account for **$532K** (~34%). 
+* **Business Takeaway:** The store maintains strong full-price pricing power. Discounts effectively boost order volume without heavily eroding net profitability.
+
+---
+
 ## 💡 Key Business Insights (Executive Summary)
 
-* **Discount Erosion:** Promotional discounts exceeding 20% significantly reduce net profit margins on high-volume product categories.
-* **Peak Sales Seasonality:** Q4 holiday periods drive over 35% of annual sales revenue, requiring optimized stock replenishment strategies in Q3.
-* **Customer Segment Dominance:** Mobile and credit card transactions account for the highest Average Order Value (AOV) across top-performing sales regions.
+* **Consistent Top-Line Health:** Overall YoY revenue growth sits at **+1.67%**, maintaining steady financial performance across operating years.
+* **Pricing Power & Margin Defense:** A 2:1 full-price to discount revenue ratio ($1.02M vs $532K) indicates strong customer willingness to pay without relying on constant promotional discounting.
+* **January Seasonality Strategy:** January serves as the primary annual revenue driver across all years, requiring preemptive Q4 logistics planning.
+* **Digital Checkout Dominance:** Over 65% of transactions are processed digitally (Credit Card + Digital Wallet), making digital gateway uptime essential for sales continuity.
 
 ---
 
@@ -83,3 +126,4 @@ A star-schema data model was built using a dedicated calendar dimension (`Dim_Da
 2. **Open the Dashboard:** Open power_bi/Sales_Performance_Dashboard.pbix using Power BI Desktop.
 
 3. **Inspect the Data Pipeline:** View Power Query steps directly via Home -> Transform Data to audit M-code steps.
+---
