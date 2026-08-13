@@ -121,7 +121,7 @@ A star-schema data model was built using a dedicated calendar dimension (`Dim_Da
 ## 🚀 How to Run & View This Project
 1. **Download the Repository:** Clone or download this repo to your local machine:
    ```bash
-   git clone [https://github.com/Kaust22/Retail_Sales_Analysis.git](https://github.com/Kaust22/Retail_Sales_Analysis.git)
+   git clone https://github.com/Kaust22/Retail_Sales_Analysis.git
    ```
 2. **Open the Dashboard:** Open power_bi/Sales_Performance_Dashboard.pbix using Power BI Desktop.
 
